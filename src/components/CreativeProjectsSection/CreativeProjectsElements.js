@@ -40,7 +40,7 @@ export const CreativeProjectContainer = styled.div`
   transition: all 0.2s ease-in-out;
   border-radius: 10px;
 
-  box-shadow: 0 0 5px black;
+  box-shadow: 0 0 5px gray;
 `;
 
 export const ImageWrapper = styled.div`

@@ -1,4 +1,4 @@
-export default [
+const array = [
   {
     text: 'Particle Font',
     image: require('../../images/creative projects/particle_font.png'),
@@ -22,10 +22,13 @@ export default [
     image: require('../../images/creative projects/A*_visualiser.png'),
     demoLink: 'https://eansengchang.github.io/A-star-pathfinding/',
     codeLink: 'https://github.com/eansengchang/A-star-pathfinding',
-  },{
+  },
+  {
     text: 'Circle Images',
     image: require('../../images/creative projects/circle_images.png'),
     demoLink: 'https://eansengchang.github.io/Circle-Images/',
     codeLink: 'https://github.com/eansengchang/Circle-Images',
   },
 ];
+
+export default array;

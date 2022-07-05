@@ -1,8 +1,8 @@
-export default [
+let array = [
   {
     title: 'Discord Bot',
     description:
-      'A utility bot for discord that provides detailed information on your server and tracks user activity.',
+      'A utility bot for discord that provides detailed information on your server and tracks user activity. Also created a website using Pug that displays the statistics and commands of the bot dynamically in real time.',
     skills: ['Mongo', 'Express', 'Node', 'Bootstrap', 'Heroku', 'Pug'],
     demoLink: 'https://oogieboogiedashboard.herokuapp.com/',
     codeLink: 'https://github.com/eansengchang/OogieBoogieBot',
@@ -27,3 +27,5 @@ export default [
     image: require('../../images/square_brawl.png'),
   },
 ];
+
+export default array;

@@ -28,7 +28,7 @@ export const ProjectWrapper = styled.div`
   border-radius: 25px;
   background: ${({ theme }) => theme.colorTwo};
   transition: all 0.2s ease-in-out;
-  box-shadow: 0 0 3px black;
+  box-shadow: 0 0 5px gray;
 `;
 
 export const ProjectGrid = styled.div`

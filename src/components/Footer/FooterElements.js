@@ -4,7 +4,7 @@ export const FooterContainer = styled.div`
   display: flex;
   justify-content: center;
   background: ${({ theme }) => theme.navColor};
-  padding: 30px 0px;
+  padding: 30px;
 `;
 export const FooterWrapper = styled.div`
   text-align: right;
