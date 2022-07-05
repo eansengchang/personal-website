@@ -29,6 +29,12 @@ const array = [
     demoLink: 'https://eansengchang.github.io/Circle-Images/',
     codeLink: 'https://github.com/eansengchang/Circle-Images',
   },
+  {
+    text: 'Particle Clock',
+    image: require('../../images/creative projects/particle_clock.png'),
+    demoLink: 'https://eansengchang.github.io/Particle-Clock/',
+    codeLink: 'https://github.com/eansengchang/Particle-Clock',
+  },
 ];
 
 export default array;
