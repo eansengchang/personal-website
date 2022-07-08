@@ -62,7 +62,7 @@ const InfoSection = () => {
                 </BtnWrapper>
                 <BtnWrapper>
                   <a
-                    href="https://www.instagram.com/eansengchang"
+                    href="https://www.instagram.com/eansengchang/?theme=dark"
                     target="_blank"
                     rel="noreferrer"
                   >
