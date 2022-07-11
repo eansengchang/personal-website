@@ -34,6 +34,11 @@ const array = [
     image: require('../../images/creative projects/particle_clock.png'),
     demoLink: 'https://eansengchang.github.io/Particle-Clock/',
     codeLink: 'https://github.com/eansengchang/Particle-Clock',
+  },{
+    text: 'Phase Portrait Visualiser',
+    image: require('../../images/creative projects/phase_portrait.png'),
+    demoLink: 'https://eansengchang.github.io/Phase-Portrait-Visualiser/',
+    codeLink: 'https://github.com/eansengchang/Phase-Portrait-Visualiser',
   },
 ];
 
