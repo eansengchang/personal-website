@@ -25,7 +25,7 @@ const HeroSection = () => {
       </HeroBg>
       <HeroContent>
         <HeroH1>Ean Seng Chang</HeroH1>
-        <HeroP>Software Developer</HeroP>
+        <HeroP>Student</HeroP>
         <HeroBtnWrapper>
           <Button
             to="projects"
