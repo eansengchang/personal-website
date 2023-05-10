@@ -14,6 +14,7 @@ import {
   SiExpress,
   SiHeroku,
   SiPug,
+  SiScala,
 } from 'react-icons/si';
 import Skill from './Skill';
 
@@ -36,6 +37,7 @@ const SkillsSection = () => {
             <Skill logo={<SiExpress />} text={'Express'} />
             <Skill logo={<SiHeroku />} text={'Heroku'} />
             <Skill logo={<SiPug />} text={'Pug'} />
+            <Skill logo={<SiScala />} text={'Scala'} />
           </SkillsGrid>
         </SkillsWrapper>
       </SkillsContainer>
