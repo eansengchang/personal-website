@@ -26,6 +26,15 @@ let array = [
     codeLink: 'https://github.com/eansengchang/Multiplayer-Square-Brawl',
     image: require('../../images/square_brawl.png'),
   },
+  {
+    title: 'Craneon',
+    description:
+      "A full stack website I developed as part of an internship. Features include logging in, adding bookings and viewing the bookings on a map.",
+    skills: ['Mongo', 'Express', 'React', 'Node'],
+    demoLink: 'https://craneon.site/',
+    codeLink: 'https://github.com/eansengchang/CraneOn-Website',
+    image: require('../../images/craneon.png'),
+  },
 ];
 
 export default array;
