@@ -29,10 +29,9 @@ const InfoSection = () => {
               <TextWrapper>
                 <Heading>About Me</Heading>
                 <Subtitle>
-                  Hey! My name is Ean Seng Chang and I'm a first year university
-                  student studying mathematics and computer science. I enjoy
-                  programming in Java and Javascript and love to create cool art
-                  using code too. I look forward to continue to learn and apply
+                  Hey! My name is Ean Seng Chang and I'm a second year university
+                  student studying mathematics and computer science in Oxford. I enjoy
+                  programming in Java and Javascript. I look forward to continue to learn and apply
                   new skills in programming to improve my ability and develop
                   more amazing programs in the future.
                 </Subtitle>
