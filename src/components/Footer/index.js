@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <FooterContainer>
       <FooterWrapper>
-        Made with love by Ean Seng Chang
+        Made by Ean Seng Chang
       </FooterWrapper>
     </FooterContainer>
   );

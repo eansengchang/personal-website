@@ -31,7 +31,7 @@ const InfoSection = () => {
                 <Subtitle>
                   Hey! My name is Ean Seng Chang and I'm a second year university
                   student studying mathematics and computer science in Oxford. I enjoy
-                  programming in Java and Javascript. I look forward to continue to learn and apply
+                  programming in Python, Java and Javascript. I look forward to continue to learn and apply
                   new skills in programming to improve my ability and develop
                   more amazing programs in the future.
                 </Subtitle>

@@ -1,12 +1,21 @@
 let array = [
   {
-    title: 'Discord Bot',
+    title: 'Vision-Based Price Comparison',
     description:
-      'A utility bot for discord that provides detailed information on your server and tracks user activity. Also created a website using Pug that displays the statistics and commands of the bot dynamically in real time.',
-    skills: ['Mongo', 'Express', 'Node', 'Bootstrap', 'Heroku', 'Pug'],
-    demoLink: 'https://oogieboogiedashboard.herokuapp.com/',
-    codeLink: 'https://github.com/eansengchang/OogieBoogieBot',
-    image: require('../../images/discord_bot.png'),
+      "A group project pursued in partnership with a company to train an object detection model to identify various electronics products with high accuracy, generate a text description of the product, and use web scraping to display similar products. All of this is done on a raspberry pi.",
+    skills: ['Python', 'Raspberri Pi', 'LLMs', 'Deep Learning'],
+    demoLink: 'https://github.com/Seb-Potoniec/price-comparison',
+    codeLink: 'https://github.com/Seb-Potoniec/price-comparison',
+    image: require('../../images/price_comparison.png'),
+  },
+  {
+    title: 'Craneon',
+    description:
+      "A full stack website I developed as part of an internship. Features include logging in, adding bookings and viewing the bookings on a map.",
+    skills: ['Mongo', 'Express', 'React', 'Node'],
+    demoLink: 'https://craneon.site/',
+    codeLink: 'https://github.com/eansengchang/CraneOn-Website',
+    image: require('../../images/craneon.png'),
   },
   {
     title: 'Chess Engine',
@@ -27,13 +36,13 @@ let array = [
     image: require('../../images/square_brawl.png'),
   },
   {
-    title: 'Craneon',
+    title: 'Discord Bot',
     description:
-      "A full stack website I developed as part of an internship. Features include logging in, adding bookings and viewing the bookings on a map.",
-    skills: ['Mongo', 'Express', 'React', 'Node'],
-    demoLink: 'https://craneon.site/',
-    codeLink: 'https://github.com/eansengchang/CraneOn-Website',
-    image: require('../../images/craneon.png'),
+      'A utility bot for discord that provides detailed information on your server and tracks user activity. Also created a website using Pug that displays the statistics and commands of the bot dynamically in real time.',
+    skills: ['Mongo', 'Express', 'Node', 'Bootstrap', 'Heroku', 'Pug'],
+    demoLink: 'https://oogieboogiedashboard.herokuapp.com/',
+    codeLink: 'https://github.com/eansengchang/OogieBoogieBot',
+    image: require('../../images/discord_bot.png'),
   },
 ];
 
