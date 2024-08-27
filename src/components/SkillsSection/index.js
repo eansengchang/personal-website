@@ -12,9 +12,13 @@ import {
   SiMongodb,
   SiNodedotjs,
   SiExpress,
-  SiHeroku,
   SiPug,
   SiScala,
+  SiTypescript,
+  SiDocker,
+  SiDotnet,
+  SiGit,
+  SiHaskell
 } from 'react-icons/si';
 import Skill from './Skill';
 
@@ -26,18 +30,23 @@ const SkillsSection = () => {
         <SkillsWrapper>
           <SkillsGrid>
             <Skill logo={<SiJavascript />} text={'Javascript'} />
-            <Skill logo={<SiPython />} text={'Python'} />
-            <Skill logo={<SiJava />} text={'Java'} />
+            <Skill logo={<SiTypescript />} text={'Typescript'} />
             <Skill logo={<SiHtml5 />} text={'HTML'} />
             <Skill logo={<SiCss3 />} text={'CSS'} />
             <Skill logo={<SiBootstrap />} text={'Bootstrap'} />
             <Skill logo={<SiReact />} text={'React'} />
-            <Skill logo={<SiMongodb />} text={'MongoDB'} />
             <Skill logo={<SiNodedotjs />} text={'NodeJS'} />
             <Skill logo={<SiExpress />} text={'Express'} />
-            <Skill logo={<SiHeroku />} text={'Heroku'} />
             <Skill logo={<SiPug />} text={'Pug'} />
+            <Skill logo={<SiPython />} text={'Python'} />
+            <Skill logo={<SiJava />} text={'Java'} />
             <Skill logo={<SiScala />} text={'Scala'} />
+            <Skill logo={<SiHaskell />} text={'Haskell'} />
+            <Skill logo={<SiMongodb />} text={'MongoDB'} />
+            <Skill logo={<SiDocker />} text={'Docker'} />
+            <Skill logo={<SiDotnet />} text={'Dotnet'} />
+            <Skill logo={<SiGit />} text={'Git'} />
+            <Skill logo={<SiGit />} text={'Git'} />
           </SkillsGrid>
         </SkillsWrapper>
       </SkillsContainer>
