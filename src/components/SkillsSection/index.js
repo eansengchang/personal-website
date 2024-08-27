@@ -46,7 +46,6 @@ const SkillsSection = () => {
             <Skill logo={<SiDocker />} text={'Docker'} />
             <Skill logo={<SiDotnet />} text={'Dotnet'} />
             <Skill logo={<SiGit />} text={'Git'} />
-            <Skill logo={<SiGit />} text={'Git'} />
           </SkillsGrid>
         </SkillsWrapper>
       </SkillsContainer>
