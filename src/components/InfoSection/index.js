@@ -29,7 +29,7 @@ const InfoSection = () => {
               <TextWrapper>
                 <Heading>About Me</Heading>
                 <Subtitle>
-                  Hey! My name is Ean Seng Chang and I'm a second year university
+                  Hey! My name is Ean Seng Chang and I'm a third year university
                   student studying mathematics and computer science in Oxford. I enjoy
                   programming in Python, Java and Javascript. I look forward to continue to learn and apply
                   new skills in programming to improve my ability and develop
