@@ -25,10 +25,10 @@ const HeroSection = () => {
       </HeroBg>
       <HeroContent>
         <HeroH1>Ean Seng Chang</HeroH1>
-        <HeroP>Student</HeroP>
+        <HeroP>Mathematics and Computer Science Student</HeroP>
         <HeroBtnWrapper>
           <Button
-            to="projects"
+            to="about"
             onMouseEnter={onHover}
             onMouseLeave={onHover}
             primary="true"
@@ -37,7 +37,7 @@ const HeroSection = () => {
             offset={-80}
             duration={300}
           >
-            View Projects
+            About me
           </Button>
         </HeroBtnWrapper>
       </HeroContent>
