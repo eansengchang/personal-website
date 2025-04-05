@@ -102,7 +102,7 @@ export const BtnContainer = styled.div`
   align-items: center;
   height: 100px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 `;
 
 export const BtnWrapper = styled.div``;

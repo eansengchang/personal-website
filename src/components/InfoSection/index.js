@@ -1,9 +1,6 @@
 import React from 'react';
-import {
-  AiFillGithub,
-  AiFillLinkedin,
-  AiFillInstagram,
-} from 'react-icons/ai';
+import { AiFillGithub, AiFillLinkedin, AiFillInstagram } from 'react-icons/ai';
+import { IoDocumentTextSharp } from 'react-icons/io5';
 import {
   InfoContainer,
   InfoWrapper,
@@ -30,10 +27,11 @@ const InfoSection = () => {
                 <Heading>About Me</Heading>
                 <Subtitle>
                   Hey! My name is Ean Seng Chang and I'm a third year university
-                  student studying mathematics and computer science in Oxford. I enjoy
-                  programming in Python, Java and Javascript. I look forward to continue to learn and apply
-                  new skills in programming to improve my ability and develop
-                  more amazing programs in the future.
+                  student studying mathematics and computer science in Oxford. I
+                  enjoy programming in Python, Java and Javascript. I look
+                  forward to continue to learn and apply new skills in
+                  programming to improve my ability and develop more amazing
+                  programs in the future.
                 </Subtitle>
               </TextWrapper>
               <BtnContainer>
@@ -56,6 +54,17 @@ const InfoSection = () => {
                   >
                     <Button>
                       <AiFillLinkedin />
+                    </Button>
+                  </a>
+                </BtnWrapper>
+                <BtnWrapper>
+                  <a
+                    href="https://drive.google.com/file/d/12Fl3lryUAuWZywvRuRA5dXR66qQU-GNF/view?usp=drive_link"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <Button>
+                      <IoDocumentTextSharp />
                     </Button>
                   </a>
                 </BtnWrapper>
