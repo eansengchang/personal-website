@@ -1,9 +1,18 @@
 let array = [
   {
+    title: 'ProofMap',
+    description:
+      "ProofMap takes a PDF of lecture notes and builds an interactive graph and list of theorems so you can see exactly how each result depends on the others.",
+    skills: ['Python', 'React', 'LLMs'],
+    demoLink: 'http://proofmap.info/',
+    codeLink: 'https://github.com/krishte/ProofMap',
+    image: require('../../images/proofmap.png'),
+  },
+  {
     title: 'Vision-Based Price Comparison',
     description:
       "A group project pursued in partnership with a company to train an object detection model to identify various electronics products with high accuracy, generate a text description of the product, and use web scraping to display similar products. All of this is done on a raspberry pi.",
-    skills: ['Python', 'Raspberri Pi', 'LLMs', 'Deep Learning'],
+    skills: ['Python', 'Raspberri Pi', 'Machine Learning'],
     demoLink: 'https://github.com/Seb-Potoniec/price-comparison',
     codeLink: 'https://github.com/Seb-Potoniec/price-comparison',
     image: require('../../images/price_comparison.png'),

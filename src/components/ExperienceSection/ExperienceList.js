@@ -1,5 +1,11 @@
 let array = [
   {
+    title: 'Software Engineer Intern | Eutelsat ',
+    description: [`Incoming SWE Intern at Eutelsat`],
+    skills: ['Python'],
+    image: require('../../images/experiences/eutelsat.jpeg'),
+  },
+  {
     title: 'Software Developer Intern | Ghyston',
     description: [
       `Worked on React on front end and Dotnet on back end`,
