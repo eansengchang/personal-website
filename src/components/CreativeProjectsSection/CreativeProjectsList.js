@@ -19,7 +19,7 @@ const array = [
   },
   {
     text: 'A* Visualised',
-    image: require('../../images/creative projects/A*_visualiser.png'),
+    image: require('../../images/creative projects/Astar_visualiser.png'),
     demoLink: 'https://eansengchang.github.io/A-star-pathfinding/',
     codeLink: 'https://github.com/eansengchang/A-star-pathfinding',
   },
