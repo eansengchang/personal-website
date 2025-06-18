@@ -25,7 +25,7 @@ const HeroSection = () => {
         <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
       </HeroBg>
       <HeroContent>
-        <ProfileImg src={require('../../images/profile.png')} alt="My Profile" />
+        <ProfileImg src={require('../../images/profile 2.jpeg')} alt="My Profile" />
         <HeroH1>Ean Seng Chang</HeroH1>
         <HeroP>Mathematics and Computer Science Student</HeroP>
         <HeroBtnWrapper>

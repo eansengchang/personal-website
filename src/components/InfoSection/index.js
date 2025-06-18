@@ -82,7 +82,7 @@ const InfoSection = () => {
               </BtnContainer>
             </Column1>
             <Column2>
-              <Img src={require('../../images/profile.png')} alt="My Profile" />
+              <Img src={require('../../images/formal pfp.jpg')} alt="My Profile" />
             </Column2>
           </InfoRow>
         </InfoWrapper>
