@@ -26,12 +26,11 @@ const InfoSection = () => {
               <TextWrapper>
                 <Heading>About Me</Heading>
                 <Subtitle>
-                  Hey! My name is Ean Seng Chang and I'm a third year university
-                  student studying mathematics and computer science in Oxford. I
-                  enjoy programming in Python, Java and Javascript. I look
-                  forward to continue to learn and apply new skills in
-                  programming to improve my ability and develop more amazing
-                  programs in the future.
+                  Hey! My name is Ean Seng Chang and I'm a master's university
+                  student studying mathematics and computer science in Oxford. I'm proficient in many languages including
+                  Python, Java and Javascript, and I'm an avid competitive programmer well-versed in algorithms and data structures. 
+                  I've pursued programming projects in full-stack development, 
+                  machine learning, computer vision, and web design.
                 </Subtitle>
               </TextWrapper>
               <BtnContainer>
@@ -59,7 +58,8 @@ const InfoSection = () => {
                 </BtnWrapper>
                 <BtnWrapper>
                   <a
-                    href="https://drive.google.com/file/d/12Fl3lryUAuWZywvRuRA5dXR66qQU-GNF/view?usp=drive_link"
+                    href="/Ean_Seng_Chang_CV.pdf"
+                    // href="https://drive.google.com/file/d/12Fl3lryUAuWZywvRuRA5dXR66qQU-GNF/view?usp=drive_link"
                     target="_blank"
                     rel="noreferrer"
                   >

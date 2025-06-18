@@ -88,6 +88,16 @@ export const HeroP = styled.p`
   }
 `;
 
+export const ProfileImg = styled.img`
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid ${({ theme }) => theme.fontColor}; 
+  margin-bottom: 20px; 
+  z-index: 3;
+`;
+
 export const HeroBtnWrapper = styled.div`
   margin-top: 32px;
   display: flex;

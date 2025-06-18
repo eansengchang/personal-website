@@ -9,6 +9,7 @@ import {
   HeroH1,
   HeroP,
   HeroBtnWrapper,
+  ProfileImg,
 } from './HeroElements';
 
 const HeroSection = () => {
@@ -24,6 +25,7 @@ const HeroSection = () => {
         <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
       </HeroBg>
       <HeroContent>
+        <ProfileImg src={require('../../images/profile.png')} alt="My Profile" />
         <HeroH1>Ean Seng Chang</HeroH1>
         <HeroP>Mathematics and Computer Science Student</HeroP>
         <HeroBtnWrapper>
