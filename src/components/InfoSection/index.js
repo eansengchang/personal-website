@@ -35,7 +35,7 @@ const InfoSection = () => {
   return (
     <InfoContainer id="about">
       <InfoWrapper>
-        <InfoRow imgStart={0}>
+        <InfoRow>
           <Column1>
             <TextWrapper>
               <Heading>About Me</Heading>

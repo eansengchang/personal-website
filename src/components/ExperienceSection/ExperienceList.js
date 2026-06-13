@@ -1,5 +1,12 @@
 const experiences = [
   {
+    title: 'Software Engineer | Coinbase',
+    incoming: true,
+    description: [`Joining Coinbase as a Software Engineer.`],
+    skills: [],
+    image: require('../../images/experiences/coinbase-logo-icon.png'),
+  },
+  {
     title: 'Software Engineer Intern | Eutelsat',
     description: [
       `Designed and implemented a serverless architecture featuring a multi-layered caching system (API Gateway, Lambda, DynamoDB), successfully reducing monthly operational costs by over £2,000.`,

@@ -12,12 +12,13 @@ import {
 const SIDEBAR_LINKS = [
   { to: 'about', label: 'About' },
   { to: 'skills', label: 'Skills' },
-  { to: 'projects', label: 'Portfolio' },
+  { to: 'experience', label: 'Experience' },
+  { to: 'projects', label: 'Projects' },
 ];
 
 const Sidebar = ({ isOpen, toggle }) => {
   return (
-    <SidebarContainer isOpen={isOpen}>
+    <SidebarContainer $isOpen={isOpen}>
       <Icon onClick={toggle}>
         <CloseIcon />
       </Icon>

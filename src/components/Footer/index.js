@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <FooterContainer>
       <FooterWrapper>
-        Made by Ean Seng Chang
+        © {new Date().getFullYear()} Ean Seng Chang · Made by Ean Seng Chang
       </FooterWrapper>
     </FooterContainer>
   );

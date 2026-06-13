@@ -8,6 +8,7 @@ import {
   TextWrapper,
   Subtitle,
   TechUsed,
+  SkillTag,
   BtnContainer,
   BtnWrapper,
   Button,
@@ -33,11 +34,15 @@ const ProjectRow = ({
             <TextWrapper>
               <ProjectName>{title}</ProjectName>
               <Subtitle>{description}</Subtitle>
-              <TechUsed>{skills.join(' | ')}</TechUsed>
+              <TechUsed>
+                {skills.map((skill) => (
+                  <SkillTag key={skill}>{skill}</SkillTag>
+                ))}
+              </TechUsed>
               <BtnContainer>
                 <BtnWrapper>
                   <a href={demoLink} target="_blank" rel="noreferrer">
-                    <Button>
+                    <Button $primary>
                       <AiOutlineLink />
                       &nbsp; Link
                     </Button>

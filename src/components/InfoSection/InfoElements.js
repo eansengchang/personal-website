@@ -2,20 +2,18 @@ import styled from 'styled-components';
 
 export const InfoContainer = styled.div`
   display: flex;
-  align-self: flex;
   background: ${({ theme }) => theme.background};
   transition: all 0.2s ease-in-out;
-  padding: 100px 0px;
+  padding: 100px 0;
 
   @media screen and (max-width: 768px) {
-    padding: 150px 0;
+    padding: 80px 0;
   }
 `;
 
 export const InfoWrapper = styled.div`
   display: flex;
   z-index: 1;
-  height: 500px;
   width: 100%;
   max-width: 1100px;
   margin-right: auto;
@@ -27,34 +25,26 @@ export const InfoWrapper = styled.div`
 export const InfoRow = styled.div`
   display: grid;
   grid-template-columns: 1.6fr 1fr;
-  ${'' /* grid-template-rows: auto minmax(300px, auto); */}
+  gap: 48px;
   align-items: center;
   justify-items: center;
   grid-template-areas: 'col1 col2';
 
   @media screen and (max-width: 768px) {
-    grid-template-areas: 'col1 col1' 'col2 col2';
+    gap: 40px;
+    grid-template-areas: 'col2' 'col1';
   }
 `;
 
 export const Column1 = styled.div`
-  margin-bottom: 15px;
   padding: 0 15px;
   grid-area: col1;
 `;
 
 export const Column2 = styled.div`
-  margin-bottom: 15px;
-  padding-right: 50px;
-  padding-left: 10px;
-
+  display: flex;
   justify-content: center;
-
   grid-area: col2;
-
-  @media screen and (max-width: 768px) {
-    padding-right: 10px;
-  }
 `;
 
 export const TextWrapper = styled.div`
@@ -63,64 +53,66 @@ export const TextWrapper = styled.div`
 
 export const Heading = styled.h1`
   margin-bottom: 24px;
-  font-size: 48px;
+  font-size: 42px;
   line-height: 1.1;
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: -0.5px;
   color: ${({ theme }) => theme.fontColor};
   transition: all 0.2s ease-in-out;
 
   @media screen and (max-width: 768px) {
-    font-size: 32px;
+    font-size: 30px;
+    text-align: center;
   }
 `;
 
 export const Subtitle = styled.p`
   max-width: 500px;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 1.6;
   color: ${({ theme }) => theme.fontColor};
   transition: all 0.2s ease-in-out;
+
+  @media screen and (max-width: 768px) {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
 `;
 
 export const Img = styled.img`
-  max-width: 500px;
-  min-width: 300px;
-
-  height: 100%;
-  padding: 0;
   width: 100%;
+  max-width: 360px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
   border-radius: 50%;
-  border: 1px solid ${({ theme }) => theme.fontColor};
+  border: 4px solid ${({ theme }) => theme.accent};
+  box-shadow: ${({ theme }) => theme.shadow};
   transition: all 0.2s ease-in-out;
-  @media screen and (max-width: 768px) {
-    width: 300px;
-  }
-
 `;
 
 export const BtnContainer = styled.div`
+  margin-top: 32px;
+  display: flex;
   align-items: center;
-  height: 100px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 12px;
+
+  @media screen and (max-width: 768px) {
+    justify-content: center;
+  }
 `;
 
 export const BtnWrapper = styled.div``;
 
 export const Button = styled.div`
-  border-radius: 50px;
-  background: transparent;
-
-  white-space: nowrap;
-
+  border-radius: 50%;
+  background: ${({ theme }) => theme.cardBg};
+  border: 1px solid ${({ theme }) => theme.border};
+  box-shadow: ${({ theme }) => theme.shadow};
   color: ${({ theme }) => theme.fontColor};
-  padding: 0;
-  font-size: 50px;
-
-  ${'' /* width: 50px; */}
-
-  outline: none;
-  border: none;
+  width: clamp(48px, 12vw, 60px);
+  height: clamp(48px, 12vw, 60px);
+  font-size: clamp(24px, 6vw, 30px);
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -128,7 +120,7 @@ export const Button = styled.div`
   transition: all 0.2s ease-in-out;
 
   &:hover {
-    transition: all 0.2s ease-in-out;
-    font-size: 60px;
+    color: ${({ theme }) => theme.accent};
+    transform: translateY(-4px);
   }
 `;

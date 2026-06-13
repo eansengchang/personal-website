@@ -5,8 +5,8 @@ export const HeroContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 30px;
-  height: 800px;
+  padding: 100px 30px 60px;
+  min-height: 100vh;
   position: relative;
   z-index: 1;
 
@@ -19,12 +19,12 @@ export const HeroContainer = styled.div`
     bottom: 0;
     background: linear-gradient(
         180deg,
-        ${({theme}) => (theme.background+'66')} 0%,
-        ${({theme}) => (theme.background+'ff')} 100%
+        ${({ theme }) => theme.background + '66'} 0%,
+        ${({ theme }) => theme.background} 100%
       ),
       linear-gradient(
         180deg,
-        ${({theme}) => (theme.navColor+'ff')} 10%,
+        ${({ theme }) => (theme.isDark ? '#000000cc' : '#D9BEC9cc')} 10%,
         transparent 100%
       );
     z-index: 2;
@@ -52,7 +52,6 @@ export const VideoBg = styled.video`
 export const HeroContent = styled.div`
   z-index: 3;
   max-width: 1200px;
-  position: absolute;
   padding: 8px 24px;
   display: flex;
   flex-direction: column;
@@ -60,9 +59,11 @@ export const HeroContent = styled.div`
 `;
 
 export const HeroH1 = styled.h1`
-  color:${({theme}) => theme.fontColor};
+  color: ${({ theme }) => theme.fontColor};
   transition: all 0.2s ease-in-out;
-  font-size: 48px;
+  font-size: 52px;
+  font-weight: 700;
+  letter-spacing: -1px;
   text-align: center;
 
   @media screen and (max-width: 768px) {
@@ -75,7 +76,7 @@ export const HeroH1 = styled.h1`
 `;
 
 export const HeroP = styled.p`
-  margin-top: 24px;
+  margin-top: 20px;
   color: ${({ theme }) => theme.fontColor};
   transition: all 0.2s ease-in-out;
   font-size: 24px;
@@ -90,7 +91,7 @@ export const HeroP = styled.p`
 export const HeroSubtitle = styled.p`
   margin-top: 8px;
   color: ${({ theme }) => theme.fontColor};
-  opacity: 0.85;
+  opacity: 0.8;
   transition: all 0.2s ease-in-out;
   font-size: 18px;
   text-align: center;
@@ -102,17 +103,18 @@ export const HeroSubtitle = styled.p`
 `;
 
 export const ProfileImg = styled.img`
-  width: 300px;
-  height: 300px;
+  width: clamp(180px, 40vw, 280px);
+  height: clamp(180px, 40vw, 280px);
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid ${({ theme }) => theme.fontColor}; 
-  margin-bottom: 20px; 
+  border: 4px solid ${({ theme }) => theme.accent};
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
+  margin-bottom: 28px;
   z-index: 3;
 `;
 
 export const HeroBtnWrapper = styled.div`
-  margin-top: 32px;
+  margin-top: 36px;
   display: flex;
   flex-direction: column;
   align-items: center;

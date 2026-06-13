@@ -29,6 +29,8 @@ build.
   - `<Section>List.js` — for data-driven sections, an array of plain objects that
     `index.js` maps over (`projects`, `experiences`, `creativeProjects`). To add a
     project/experience/creative project, edit the relevant list file — don't touch JSX.
+    Each item's `skills` array renders as pill tags (empty array = no tags). An experience
+    item may set `incoming: true` to show an "Incoming" badge next to its title.
 - `src/components/GlobalElements.js` / `ButtonElements.js` — shared styled-components.
 - `src/colorScheme.js` — the `darkTheme` / `lightTheme` objects.
 - `src/pages/index.js` — assembles all sections in order and provides the theme.
@@ -41,6 +43,11 @@ build.
   driven by `UserContext` (`src/contexts/User/`, a `useReducer` store with one action,
   `toggle_dark_theme`).
 - Styled-components read theme values through props: `${({ theme }) => theme.fontColor}`.
+- Both themes expose the same token set — prefer these over hard-coded colors so dark/light
+  stay in sync: `fontColor`, `background`, `navColor` (semi-transparent; the Navbar adds
+  `backdrop-filter` blur, so full-screen surfaces like the Sidebar use solid `background`),
+  `colorOne`/`colorTwo`, `cardBg`, `muted` (secondary text), `border`, `accent`/`accentHover`
+  (the green call-to-action color), and `shadow`.
 - Both themes carry an `isDark` boolean — use `theme.isDark` for dark/light-conditional
   styles. **Do not** call hooks (`useContext`) inside styled-component interpolations.
 - `ThemeToggle` (`src/components/ThemeToggle/`) is the single shared toggle used by both

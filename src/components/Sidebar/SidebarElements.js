@@ -7,14 +7,13 @@ export const SidebarContainer = styled.aside`
   z-index: 999;
   width: 100%;
   height: 100%;
-  background: ${({ theme }) => theme.navColor};
+  background: ${({ theme }) => theme.background};
   display: grid;
   align-items: center;
-  top: 0;
   left: 0;
-  transition: 0.3s ease-in-out;
-  opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
-  top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
+  transition: opacity 0.3s ease-in-out, top 0.3s ease-in-out;
+  opacity: ${({ $isOpen }) => ($isOpen ? '1' : '0')};
+  top: ${({ $isOpen }) => ($isOpen ? '0' : '-100%')};
 `;
 
 export const CloseIcon = styled(FaTimes)`
@@ -59,7 +58,7 @@ export const SidebarLink = styled(LinkS)`
   cursor: pointer;
 
   &:hover {
-    color: #01bf71;
+    color: ${({ theme }) => theme.accent};
     transition: 0.2s ease-in-out;
   }
 `;
