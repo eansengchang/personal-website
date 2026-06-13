@@ -7,6 +7,13 @@ const experiences = [
     image: require('../../images/experiences/coinbase-logo-icon.png'),
   },
   {
+    title: 'Graduate Software Engineer | Visa',
+    incoming: true,
+    description: [`Joining Visa as a Graduate Software Engineer.`],
+    skills: [],
+    image: require('../../images/experiences/visa-logo.png'),
+  },
+  {
     title: 'Software Engineer Intern | Eutelsat',
     description: [
       `Designed and implemented a serverless architecture featuring a multi-layered caching system (API Gateway, Lambda, DynamoDB), successfully reducing monthly operational costs by over £2,000.`,
