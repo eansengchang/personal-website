@@ -1,4 +1,4 @@
-const array = [
+const creativeProjects = [
   {
     text: 'Particle Font',
     image: require('../../images/creative projects/particle_font.png'),
@@ -34,7 +34,8 @@ const array = [
     image: require('../../images/creative projects/particle_clock.png'),
     demoLink: 'https://eansengchang.github.io/Particle-Clock/',
     codeLink: 'https://github.com/eansengchang/Particle-Clock',
-  },{
+  },
+  {
     text: 'Phase Portrait Visualiser',
     image: require('../../images/creative projects/phase_portrait.png'),
     demoLink: 'https://eansengchang.github.io/Phase-Portrait-Visualiser/',
@@ -42,4 +43,4 @@ const array = [
   },
 ];
 
-export default array;
+export default creativeProjects;

@@ -45,7 +45,6 @@ export const HeroBg = styled.div`
 export const VideoBg = styled.video`
   width: 100%;
   height: 100%;
-  ${'' /* -o-object-fot: cover; */}
   object-fit: cover;
   background: #232a34;
 `;
@@ -77,7 +76,7 @@ export const HeroH1 = styled.h1`
 
 export const HeroP = styled.p`
   margin-top: 24px;
-  color:${({theme}) => theme.fontColor};
+  color: ${({ theme }) => theme.fontColor};
   transition: all 0.2s ease-in-out;
   font-size: 24px;
   text-align: center;
@@ -85,6 +84,20 @@ export const HeroP = styled.p`
 
   @media screen and (max-width: 480px) {
     font-size: 18px;
+  }
+`;
+
+export const HeroSubtitle = styled.p`
+  margin-top: 8px;
+  color: ${({ theme }) => theme.fontColor};
+  opacity: 0.85;
+  transition: all 0.2s ease-in-out;
+  font-size: 18px;
+  text-align: center;
+  max-width: 600px;
+
+  @media screen and (max-width: 480px) {
+    font-size: 16px;
   }
 `;
 

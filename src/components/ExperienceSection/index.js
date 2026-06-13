@@ -6,16 +6,12 @@ import experiences from './ExperienceList';
 
 const ExperiencesSection = () => {
   return (
-    <>
-      <ExperiencesContainer id="experience">
-        <GlobalH1>Experience</GlobalH1>
-        {experiences.map((experience) => {
-            return (
-              <ExperienceRow key={experience.title} {...experience} />
-            );
-          })}
-      </ExperiencesContainer>
-    </>
+    <ExperiencesContainer id="experience">
+      <GlobalH1>Experience</GlobalH1>
+      {experiences.map((experience) => (
+        <ExperienceRow key={experience.title} {...experience} />
+      ))}
+    </ExperiencesContainer>
   );
 };
 

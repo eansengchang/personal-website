@@ -15,7 +15,7 @@ const CreativeProject = ({ text, image, demoLink, codeLink }) => {
     <CreativeProjectContainer>
       <a href={demoLink} target="_blank" rel="noreferrer">
         <ImageWrapper>
-          <Image src={image} />
+          <Image src={image} alt={text} />
         </ImageWrapper>
       </a>
       <TextWrapper>

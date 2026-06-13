@@ -1,4 +1,4 @@
-let array = [
+const projects = [
   {
     title: 'ProofMap',
     description:
@@ -12,7 +12,7 @@ let array = [
     title: 'Vision-Based Price Comparison',
     description:
       "A group project pursued in partnership with a company to train an object detection model to identify various electronics products with high accuracy, generate a text description of the product, and use web scraping to display similar products. All of this is done on a raspberry pi.",
-    skills: ['Python', 'Raspberri Pi', 'Machine Learning'],
+    skills: ['Python', 'Raspberry Pi', 'Machine Learning'],
     demoLink: 'https://github.com/Seb-Potoniec/price-comparison',
     codeLink: 'https://github.com/Seb-Potoniec/price-comparison',
     image: require('../../images/price_comparison.png'),
@@ -55,4 +55,4 @@ let array = [
   },
 ];
 
-export default array;
+export default projects;

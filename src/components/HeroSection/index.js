@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Button } from '../ButtonElements';
 import Video from '../../videos/video.mp4';
 import {
@@ -8,33 +8,30 @@ import {
   HeroContent,
   HeroH1,
   HeroP,
+  HeroSubtitle,
   HeroBtnWrapper,
   ProfileImg,
 } from './HeroElements';
 
 const HeroSection = () => {
-  const [hover, setHover] = useState(false);
-
-  const onHover = (hover) => {
-    setHover(!hover);
-  };
-
   return (
     <HeroContainer>
       <HeroBg>
         <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
       </HeroBg>
       <HeroContent>
-        <ProfileImg src={require('../../images/profile 2.jpeg')} alt="My Profile" />
+        <ProfileImg
+          src={require('../../images/profile 2.jpeg')}
+          alt="Ean Seng Chang"
+        />
         <HeroH1>Ean Seng Chang</HeroH1>
-        <HeroP>Mathematics and Computer Science Student</HeroP>
+        <HeroP>Incoming Software Engineer at Coinbase</HeroP>
+        <HeroSubtitle>Mathematics &amp; Computer Science @ Oxford</HeroSubtitle>
         <HeroBtnWrapper>
           <Button
             to="about"
-            onMouseEnter={onHover}
-            onMouseLeave={onHover}
-            primary="true"
-            dark="true"
+            $primary
+            $dark
             smooth={true}
             offset={-80}
             duration={300}

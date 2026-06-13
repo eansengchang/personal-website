@@ -1,9 +1,9 @@
-let array = [
+const experiences = [
   {
     title: 'Software Engineer Intern | Eutelsat',
     description: [
       `Designed and implemented a serverless architecture featuring a multi-layered caching system (API Gateway, Lambda, DynamoDB), successfully reducing monthly operational costs by over £2,000.`,
-      `Engineered multiple end-to-end data pipelines to ingest, validate, and store data in PostGIS and S3, and optimized a core Lambda function to achieve a 90\% improvement in execution speed.`,
+      `Engineered multiple end-to-end data pipelines to ingest, validate, and store data in PostGIS and S3, and optimized a core Lambda function to achieve a 90% improvement in execution speed.`,
       `Strengthened code quality by authoring comprehensive unit and integration tests with pytest and embedding them into the CI/CD workflow for automated validation and regression testing.`,
     ],
     skills: ['Python', 'AWS', 'CI/CD', 'PostGIS', 'Pytest', 'SQL'],
@@ -21,4 +21,4 @@ let array = [
   },
 ];
 
-export default array;
+export default experiences;

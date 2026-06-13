@@ -56,7 +56,7 @@ const ProjectRow = ({
           </Column1>
           <Column2>
             <ImageWrapper>
-              <Img src={image} />
+              <Img src={image} alt={title} />
             </ImageWrapper>
           </Column2>
         </ProjectGrid>

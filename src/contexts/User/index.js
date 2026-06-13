@@ -10,15 +10,8 @@ export const UserProvider = ({ children }) => {
   const [state, dispatch] = React.useReducer(reducer, initialState);
 
   return (
-    <>
-      <UserContext.Provider value={[state, dispatch]}>
-        {children}
-      </UserContext.Provider>
-    </>
+    <UserContext.Provider value={[state, dispatch]}>
+      {children}
+    </UserContext.Provider>
   );
-};
-
-export let IsDark = () => {
-  const [state, dispatch] = React.useContext(UserContext);
-  return state.isDarkTheme;
 };

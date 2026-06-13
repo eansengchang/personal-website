@@ -1,5 +1,5 @@
 import React from 'react';
-import { UserContext } from '../../contexts/User';
+import ThemeToggle from '../ThemeToggle';
 import {
   SidebarContainer,
   Icon,
@@ -9,19 +9,13 @@ import {
   SidebarMenu,
 } from './SidebarElements';
 
-import {
-  ToggleContainer,
-  ToggleWrapper,
-  ToggleSwitch,
-  Checkbox,
-  Label,
-  Inner,
-  Switch,
-} from '../Navbar/NavbarElements';
+const SIDEBAR_LINKS = [
+  { to: 'about', label: 'About' },
+  { to: 'skills', label: 'Skills' },
+  { to: 'projects', label: 'Portfolio' },
+];
 
 const Sidebar = ({ isOpen, toggle }) => {
-  const [state, dispatch] = React.useContext(UserContext);
-
   return (
     <SidebarContainer isOpen={isOpen}>
       <Icon onClick={toggle}>
@@ -29,66 +23,21 @@ const Sidebar = ({ isOpen, toggle }) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink
-            to="about"
-            onClick={toggle}
-            spy={true}
-            smooth={true}
-            offset={-80}
-            duration={300}
-            exact="true"
-          >
-            About
-          </SidebarLink>
-          <SidebarLink
-            to="skills"
-            onClick={toggle}
-            spy={true}
-            smooth={true}
-            offset={-80}
-            duration={300}
-            exact="true"
-          >
-            Skills
-          </SidebarLink>
-          <SidebarLink
-            to="projects"
-            onClick={toggle}
-            spy={true}
-            smooth={true}
-            offset={-80}
-            duration={300}
-            exact="true"
-          >
-            Portfolio
-          </SidebarLink>
-          {/* <SidebarLink
-            to="contact"
-            onClick={toggle}
-            spy={true}
-            smooth={true}
-            offset={-80}
-            duration={300}
-            exact="true"
-          >
-            Contact
-          </SidebarLink> */}
-          <ToggleContainer>
-            <ToggleWrapper>
-              <ToggleSwitch>
-                <Checkbox />
-                <Label
-                  onClick={() => {
-                    dispatch({ type: 'toggle_dark_theme' });
-                    // console.log(state);
-                  }}
-                >
-                  <Inner />
-                  <Switch></Switch>
-                </Label>
-              </ToggleSwitch>
-            </ToggleWrapper>
-          </ToggleContainer>
+          {SIDEBAR_LINKS.map(({ to, label }) => (
+            <SidebarLink
+              key={to}
+              to={to}
+              onClick={toggle}
+              spy={true}
+              smooth={true}
+              offset={-80}
+              duration={300}
+              exact="true"
+            >
+              {label}
+            </SidebarLink>
+          ))}
+          <ThemeToggle />
         </SidebarMenu>
       </SidebarWrapper>
     </SidebarContainer>

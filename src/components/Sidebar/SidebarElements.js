@@ -3,7 +3,6 @@ import { FaTimes } from 'react-icons/fa';
 import { Link as LinkS } from 'react-scroll';
 
 export const SidebarContainer = styled.aside`
-  ${(prop) => console.log()}
   position: fixed;
   z-index: 999;
   width: 100%;
@@ -53,8 +52,7 @@ export const SidebarLink = styled(LinkS)`
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
-  text-decorations: none;
-  list-styled: none;
+  list-style: none;
   transition: 0.2s ease-in-out;
   text-decoration: none;
   color: ${({ theme }) => theme.fontColor};

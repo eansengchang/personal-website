@@ -13,14 +13,7 @@ import {
   Img,
 } from './ExperienceElements';
 
-const ProjectRow = ({
-  title,
-  description,
-  skills,
-  demoLink,
-  codeLink,
-  image,
-}) => {
+const ExperienceRow = ({ title, description, skills, image }) => {
   return (
     <ExperienceContainer>
       <ExperienceWrapper>
@@ -29,20 +22,18 @@ const ProjectRow = ({
             <TextWrapper>
               <ExperienceName>{title}</ExperienceName>
               <Subtitle>
-                {
-                  <ul style={{ paddingLeft: '20px'}}>
-                    {description.map((item, index) => (
-                      <li key={index}>{item}</li>
-                    ))}
-                  </ul>
-                }
+                <ul style={{ paddingLeft: '20px' }}>
+                  {description.map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
+                </ul>
               </Subtitle>
               <TechUsed>{skills.join(' | ')}</TechUsed>
             </TextWrapper>
           </Column1>
           <Column2>
             <ImageWrapper>
-              <Img src={image} />
+              <Img src={image} alt={title} />
             </ImageWrapper>
           </Column2>
         </ExperienceGrid>
@@ -51,4 +42,4 @@ const ProjectRow = ({
   );
 };
 
-export default ProjectRow;
+export default ExperienceRow;
