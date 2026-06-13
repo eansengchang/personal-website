@@ -32,6 +32,7 @@ export const InfoRow = styled.div`
 
   @media screen and (max-width: 768px) {
     gap: 40px;
+    grid-template-columns: 1fr;
     grid-template-areas: 'col2' 'col1';
   }
 `;
