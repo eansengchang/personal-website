@@ -1,8 +1,7 @@
 const experiences = [
   {
-    title: 'Software Engineer | Coinbase',
-    incoming: true,
-    description: [`Joining Coinbase as a Software Engineer.`],
+    title: 'Software Engineer Intern | Coinbase',
+    description: [`Software Engineer Intern at Coinbase for the summer.`],
     skills: [],
     image: require('../../images/experiences/coinbase-logo-icon.png'),
   },

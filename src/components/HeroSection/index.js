@@ -25,7 +25,7 @@ const HeroSection = () => {
           alt="Ean Seng Chang"
         />
         <HeroH1>Ean Seng Chang</HeroH1>
-        <HeroP>Incoming Software Engineer at Coinbase</HeroP>
+        <HeroP>Software Engineer Intern at Coinbase</HeroP>
         <HeroSubtitle>Mathematics &amp; Computer Science @ Oxford</HeroSubtitle>
         <HeroBtnWrapper>
           <Button

@@ -42,7 +42,7 @@ const InfoSection = () => {
               <Subtitle>
                 Hey! My name is Ean Seng Chang and I'm a master's university
                 student studying mathematics and computer science in Oxford, and
-                I'll soon be joining Coinbase as a software engineer. I'm
+                I'm a software engineer intern at Coinbase this summer. I'm
                 proficient in many languages including Python, Java and
                 Javascript, and I'm an avid competitive programmer well-versed in
                 algorithms and data structures. I've pursued programming projects
