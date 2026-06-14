@@ -30,9 +30,9 @@ const Sidebar = ({ isOpen, toggle }) => {
               to={to}
               onClick={toggle}
               spy={true}
-              smooth={true}
+              smooth={'easeOutQuad'}
               offset={-80}
-              duration={300}
+              duration={200}
               exact="true"
             >
               {label}

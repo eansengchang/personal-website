@@ -61,6 +61,18 @@ build.
   rather than copy-pasting blocks.
 - Give `<img>` and `<Img>` elements meaningful `alt` text.
 - Section components return a single root element — no unnecessary `<>...</>` wrappers.
+- In-page scroll links (`react-scroll`) must match the shared params so navigation
+  feels consistent: `offset={-80}` (cancels the 80px sticky navbar), `smooth={'easeOutQuad'}`,
+  `duration={200}`. These appear in `Navbar`, `Sidebar`, and the Hero "About me" button —
+  reuse the same values for any new link.
+
+## Deployment & SEO
+
+- Deployed as a static build, live at `https://eansengchang.com`.
+- SEO and social-share metadata live in `public/index.html`: the `description`, the
+  Open Graph (`og:*`) and Twitter card tags use **absolute** `https://eansengchang.com`
+  URLs (required for link previews to render). If the domain or `og:image` changes,
+  update every absolute URL in that file together.
 
 ## Stack
 

@@ -32,9 +32,9 @@ const HeroSection = () => {
             to="about"
             $primary
             $dark
-            smooth={true}
+            smooth={'easeOutQuad'}
             offset={-80}
-            duration={300}
+            duration={200}
           >
             About me
           </Button>
