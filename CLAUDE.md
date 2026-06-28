@@ -68,7 +68,16 @@ build.
 
 ## Deployment & SEO
 
-- Deployed as a static build, live at `https://eansengchang.com`.
+- Deployed as a static build on **Netlify**, live at `https://eansengchang.com`.
+- `public/_redirects` proxies the **zip-practice** app (a separate repo/deploy) onto
+  this domain at `/zip-practice`. The rules use Netlify's status-`200` rewrite (a
+  server-side proxy, **not** a `301`/`302` redirect), so the browser URL stays
+  `eansengchang.com/zip-practice` while content is served from `zip-practice.netlify.app`.
+  This only works once deployed — the CRA dev server (`npm start`) ignores `_redirects`,
+  so locally `/zip-practice` just renders this app's home page. For the asset paths to
+  resolve through the proxy, zip-practice must be built with a `/zip-practice` base path
+  (it sets `PUBLIC_URL=/zip-practice` in its build script); don't change that prefix on
+  one side without the other, or the proxied assets 404.
 - SEO and social-share metadata live in `public/index.html`: the `description`, the
   Open Graph (`og:*`) and Twitter card tags use **absolute** `https://eansengchang.com`
   URLs (required for link previews to render). If the domain or `og:image` changes,
