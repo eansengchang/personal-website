@@ -1,5 +1,14 @@
 const projects = [
   {
+    title: 'Zip Practice',
+    description:
+      "A practice tool for LinkedIn's daily Zip puzzle. It generates random solvable boards at easy, medium, and hard difficulties. Puzzles can be shared by URL and the solution can be revealed at any time.",
+    skills: ['React'],
+    demoLink: 'https://eansengchang.com/zip-practice',
+    codeLink: 'https://github.com/eansengchang/zip-practice',
+    image: require('../../images/zip_practice.png'),
+  },
+  {
     title: 'ProofMap',
     description:
       "ProofMap takes a PDF of lecture notes and builds an interactive graph and list of theorems so you can see exactly how each result depends on the others.",
