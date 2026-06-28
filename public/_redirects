@@ -1,0 +1,6 @@
+# Proxy /zip-practice to the separately-deployed zip-practice site.
+# Status 200 = rewrite (server-side proxy): the URL bar stays eansengchang.com/zip-practice.
+# zip-practice is built with homepage="/zip-practice", so its assets request
+# /zip-practice/static/... which the splat rule below forwards correctly.
+/zip-practice      https://zip-practice.netlify.app/        200
+/zip-practice/*    https://zip-practice.netlify.app/:splat  200
