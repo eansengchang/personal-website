@@ -8,7 +8,7 @@ const Footer = () => {
       <FooterWrapper>
         © {new Date().getFullYear()} Ean Seng Chang · Made by Ean Seng Chang ·{' '}
         <FooterLink
-          href="/Dissertation.pdf"
+          href="/dissertation.pdf"
           target="_blank"
           rel="noreferrer"
         >
