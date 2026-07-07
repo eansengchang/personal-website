@@ -4,11 +4,10 @@ import { SkillsContainer, SkillsWrapper, SkillsGrid } from './SkillsElements';
 import {
   SiJavascript,
   SiPython,
-  SiJava,
   SiCplusplus,
   SiGo,
   SiHtml5,
-  SiCss3,
+  SiCss,
   SiBootstrap,
   SiReact,
   SiMongodb,
@@ -22,15 +21,17 @@ import {
   SiDotnet,
   SiGit,
   SiHaskell,
-  SiAmazonaws,
   SiLinux,
   SiPostman,
+  SiCursor,
+  SiClaudecode,
   SiLatex,
   SiPandas,
   SiNumpy,
   SiKeras,
   SiPytest
 } from 'react-icons/si';
+import { FaAws, FaJava } from 'react-icons/fa';
 import Skill from './Skill';
 
 
@@ -43,13 +44,13 @@ const SkillsSection = () => {
             <Skill logo={<SiJavascript />} text={'Javascript'} />
             <Skill logo={<SiTypescript />} text={'Typescript'} />
             <Skill logo={<SiPython />} text={'Python'} />
-            <Skill logo={<SiJava />} text={'Java'} />
+            <Skill logo={<FaJava />} text={'Java'} />
             <Skill logo={<SiCplusplus />} text={'C++'} />
             <Skill logo={<SiGo />} text={'Go'} />
             <Skill logo={<SiScala />} text={'Scala'} />
             <Skill logo={<SiHaskell />} text={'Haskell'} />
             <Skill logo={<SiHtml5 />} text={'HTML'} />
-            <Skill logo={<SiCss3 />} text={'CSS'} />
+            <Skill logo={<SiCss />} text={'CSS'} />
             <Skill logo={<SiReact />} text={'React'} />
             <Skill logo={<SiNodedotjs />} text={'NodeJS'} />
             <Skill logo={<SiExpress />} text={'Express'} />
@@ -60,7 +61,7 @@ const SkillsSection = () => {
             <Skill logo={<SiPostgresql />} text={'PostgreSQL'} />
             <Skill logo={<SiGit />} text={'Git'} />
             <Skill logo={<SiDocker />} text={'Docker'} />
-            <Skill logo={<SiAmazonaws />} text={'AWS'} />
+            <Skill logo={<FaAws />} text={'AWS'} />
             <Skill logo={<SiLinux />} text={'Linux'} />
             <Skill logo={<SiPostman />} text={'Postman'} />
             <Skill logo={<SiLatex />} text={'LaTeX'} />
@@ -68,6 +69,8 @@ const SkillsSection = () => {
             <Skill logo={<SiNumpy />} text={'NumPy'} />
             <Skill logo={<SiKeras />} text={'Keras'} />
             <Skill logo={<SiPytest />} text={'Pytest'} />
+            <Skill logo={<SiCursor />} text={'Cursor'} />
+            <Skill logo={<SiClaudecode />} text={'Claude Code'} />
           </SkillsGrid>
         </SkillsWrapper>
       </SkillsContainer>
