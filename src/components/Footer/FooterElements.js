@@ -14,3 +14,12 @@ export const FooterWrapper = styled.div`
   width: 100%;
   font-size: 15px;
 `;
+export const FooterLink = styled.a`
+  color: ${({ theme }) => theme.muted};
+  text-decoration: none;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: ${({ theme }) => theme.accent};
+  }
+`;
