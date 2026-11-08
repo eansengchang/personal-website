@@ -1,6 +1,6 @@
 import React from 'react';
 import { AiFillGithub, AiFillLinkedin, AiFillInstagram } from 'react-icons/ai';
-import { IoDocumentTextSharp } from 'react-icons/io5';
+// import { IoDocumentTextSharp } from 'react-icons/io5'; // re-enable with the CV link below
 import {
   InfoContainer,
   InfoWrapper,
@@ -23,7 +23,7 @@ const SOCIAL_LINKS = [
     label: 'LinkedIn',
     icon: AiFillLinkedin,
   },
-  { href: '/Ean_Seng_Chang_CV.pdf', label: 'CV', icon: IoDocumentTextSharp },
+  // { href: '/Ean_Seng_Chang_CV.pdf', label: 'CV', icon: IoDocumentTextSharp },
   {
     href: 'https://www.instagram.com/eansengchang/?theme=dark',
     label: 'Instagram',
